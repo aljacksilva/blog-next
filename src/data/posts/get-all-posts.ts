@@ -1,5 +1,5 @@
 import { POST_URL } from '@/config/app-config';
-import { PostData } from '@/domain/posts/posts';
+import { PostData } from '@/domain/posts/post';
 import { fecthJson } from '@/utils/fetch-json';
 
 export const getAllPosts = async (query = ''): Promise<PostData[]> => {

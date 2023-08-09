@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { PostData } from '@/domain/posts/posts';
-import { Container } from './styles';
+import { PostData } from '@/domain/posts/post';
+import { Category, Container } from './styles';
 import { Header } from '@/components/Header';
 import { MainContainer } from '@/components/MainContainer';
 import { PostCard } from '@/components/PostCard';
@@ -9,15 +9,17 @@ import { SITE_NAME } from '@/config/app-config';
 
 export type HomePageProps = {
   posts: PostData[];
+  category?: string;
 };
 
-export default function HomePage({ posts }: HomePageProps) {
+export default function HomePage({ posts, category }: HomePageProps) {
   return (
     <>
       <Head>
         <title>{SITE_NAME}</title>
         <meta name="description" content="Este é meu blog de tecnologia" />
       </Head>
+      {category && <Category>Categoria: {category}</Category>}
       <Header />
       <MainContainer>
         <Container>

@@ -1,6 +1,6 @@
 import HomePage from '@/containers/HomePage';
 import { getAllPosts } from '@/data/posts/get-all-posts';
-import { PostData } from '@/domain/posts/posts';
+import { PostData } from '@/domain/posts/post';
 import { GetStaticProps } from 'next';
 
 export type HomeProps = {
@@ -16,5 +16,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: { posts },
+    // revalidate: 5,
   };
 };

@@ -7,7 +7,7 @@ import { MainContainer } from '@/components/MainContainer';
 import { PostContainer } from '@/components/PostContainer';
 import { PostCover } from '@/components/PostCover';
 import { PostDetails } from '@/components/PostDetails';
-import { PostData } from '@/domain/posts/posts';
+import { PostData } from '@/domain/posts/post';
 import { SITE_NAME } from '@/config/app-config';
 import { removeHtml } from '@/utils/remove-html';
 
