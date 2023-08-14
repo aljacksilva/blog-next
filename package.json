@@ -9,7 +9,9 @@
     "lint": "next lint",
     "deploy:static": "next build && next export",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@types/node": "20.4.5",
@@ -29,6 +31,14 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.22.5",
+    "@storybook/addon-essentials": "^7.2.3",
+    "@storybook/addon-interactions": "^7.2.3",
+    "@storybook/addon-links": "^7.2.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.3",
+    "@storybook/nextjs": "^7.2.3",
+    "@storybook/react": "^7.2.3",
+    "@storybook/testing-library": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
@@ -41,6 +51,8 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "jest-styled-components": "^7.1.1"
+    "eslint-plugin-storybook": "^0.6.13",
+    "jest-styled-components": "^7.1.1",
+    "storybook": "^7.2.3"
   }
 }
